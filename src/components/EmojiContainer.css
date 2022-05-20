@@ -1,0 +1,105 @@
+h2 {
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px 1px 2px #141414,
+        1px 1px 3px #141414,
+        1px 1px 5px #141414,
+        1px 1px 7px #141414,
+        1px 1px 10px #141414,
+        1px 1px 12px #141414,
+        1px 1px 18px #141414;
+    color: #fff;
+}
+
+.container {
+    width: 98vw;
+    height: 70vh;
+    text-align: center;
+    display: inline-block;
+}
+
+.half {
+    height: 100%;
+    width: 45%;
+    border: 1px solid rgb(132, 119, 145);
+    display: inline-block;
+    overflow-y: auto;
+    background-color: white;
+    text-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.half::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.alignLeft {
+    margin-left: 10%;
+    text-align: left;
+}
+
+.describe {
+    text-shadow: -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff,
+        1px 1px 10px #141414;
+    color: #333;
+    font-size: 2.5vw;
+}
+
+.description {
+    font-size: 2.2vw;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px 1px 10px #141414;
+    color: rgb(151, 150, 150);
+}
+
+
+.emoji {
+    display: inline-block;
+}
+
+.emoji:hover {
+    transform: scale(1.5, 1.5);
+}
+
+#bigEmoji {
+    font-size: 100px;
+}
+
+#copyButton {
+    padding: 5px 30px 5px 30px;
+    font-size: 20px;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px 1px 2px #141414,
+        1px 1px 3px #141414,
+        1px 1px 5px #141414,
+        1px 1px 7px #141414,
+        1px 1px 10px #141414,
+        1px 1px 12px #141414,
+        1px 1px 18px #141414;
+    color: #fff;
+}
+
+#copyButton:hover {
+    background-color: rgb(24, 18, 18) !important;
+    color: white !important;
+    text-shadow: 0 0 2px #FFD100,
+        0 0 30px #FFD100,
+        0px 0px 5px #FFD100,
+        0 0 150px #FFD100;
+    transform: scale(0.9, 0.9);
+
+}

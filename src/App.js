@@ -1,23 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import React, { useEffect, useState } from "react";
+import EmojiContainer from './components/EmojiContainer';
+
+
+const url = "https://emojihub.herokuapp.com/api/all/category_"
+
+
+
 
 function App() {
+  const categoryList =
+    [
+      "smileys_and_people",
+      "animals_and_nature",
+      "food_and_drink",
+      "travel_and_places",
+      "activities",
+      "objects",
+      "symbols",
+    ]
+
+  const [category, setCategory] = useState(categoryList[0]);
+  const [data, setData] = useState([]);
+
+
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url + category);
+        const json = await response.json();
+        setData(json)
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
+
+    fetchData();
+
+  }, [category])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header category={category} setCategory={(e) => setCategory(e)} categoryList={categoryList} />
+      <EmojiContainer data={data} />
     </div>
   );
 }
