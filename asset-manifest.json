@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Emoji-List/static/css/main.dbb0e25d.css",
+    "main.css": "/Emoji-List/static/css/main.4a14f541.css",
     "main.js": "/Emoji-List/static/js/main.5a2be3ca.js",
     "index.html": "/Emoji-List/index.html",
-    "main.dbb0e25d.css.map": "/Emoji-List/static/css/main.dbb0e25d.css.map",
+    "main.4a14f541.css.map": "/Emoji-List/static/css/main.4a14f541.css.map",
     "main.5a2be3ca.js.map": "/Emoji-List/static/js/main.5a2be3ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbb0e25d.css",
+    "static/css/main.4a14f541.css",
     "static/js/main.5a2be3ca.js"
   ]
 }
